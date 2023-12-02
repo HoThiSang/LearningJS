@@ -26,7 +26,7 @@ const student1 = {
 const student2 = {
     name: "Sang", 
     class : "PNV25A",
-    isHero : true
+    age : 19
 }
 // const student2 = student1;
 console.log(compareObject(student1, student2));

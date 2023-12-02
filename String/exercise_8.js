@@ -26,7 +26,7 @@ function isSecureUrlV2(url){
      if(url.startsWith("wss")) return true;
      return false;
 }
-const url= "wss://github.com/HoThiSang/LearningJS";
+const url= "https://github.com/HoThiSang/LearningJS";
 console.log(isSecureUrlV1(url))
 console.log(isSecureUrlV2(url))
 

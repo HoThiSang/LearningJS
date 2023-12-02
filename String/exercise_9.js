@@ -27,5 +27,5 @@ function extractDomainV2(email){
 }
 const email = "sang@gmail.com";
 console.log(extractDomainV1(email));
-console.log(extractDomainV2(email))
+console.log(extractDomainV2(email));
 
