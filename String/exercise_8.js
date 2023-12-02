@@ -12,9 +12,24 @@ function checkUrl (url){
 
 const b = "https://github.com/HoThiSang/LearningJS";
 console.log(checkUrl(b))
-// if(checkUrl(b)){
-//      console.log("url that contains the security method")
-// }else{
-//      console.log("url does not contain a security method")
-// }
+
+//----------------Bài Anh Thành sửa ----------------------------------
+// using indexOf()
+function isSecureUrlV1(url){
+     if(url.indexOf("s", 4)===4) return true;
+     if(url.indexOf("s", 2)===2) return true;
+      return false;
+}
+// using startWith()
+function isSecureUrlV2(url){
+     if(url.startsWith("https")) return true;
+     if(url.startsWith("wss")) return true;
+     return false;
+}
+const url= "wss://github.com/HoThiSang/LearningJS";
+console.log(isSecureUrlV1(url))
+console.log(isSecureUrlV2(url))
+
+
+
 
