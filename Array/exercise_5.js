@@ -1,14 +1,11 @@
 function findMax(arr){
-    let max;
-    for(let i=0; i<arr.length; i++){
-        max =arr[i];
-        for(let i=0; i<arr.length-1; i++){
-            if(arr[i]< arr[i+1]){
-                max = arr[i+1];
-            }
+    let max = arr[0];
+    for(let i=1; i<arr.length; i++){
+        if(max<arr[i]){
+            max=arr[i]
         }
     }
     return max;
 }
-const arr = [2,10,8,15];
-console.log(findMax(arr));
+const arr = [2,10,80,7];
+console.log(findMax(arr));                                      
