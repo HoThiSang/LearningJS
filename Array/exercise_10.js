@@ -3,7 +3,7 @@
 function isPerfectNumber(n){
     let sum=0;
     if(n<=2) return false;
-    for(let i=0; i<=n/2; i++){
+    for(let i=0; i<=n-1; i++){
         if(n%i==0){
             sum+=i;
         }
@@ -12,4 +12,4 @@ function isPerfectNumber(n){
     return false;
 }
 
-console.log(isPerfectNumber());
+console.log(isPerfectNumber(6));
