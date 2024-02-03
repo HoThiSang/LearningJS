@@ -1,7 +1,7 @@
 const numberList = [2, 5, 3, 1];
 numberList.sort(); // [1, 2, 3, 5]
 console.log([null, 2, 1, 5, 3, undefined, null].sort()); // [1, 2, 3, 5, null, null,
-//undefined]
+
 
 //--------------------------\
 // v1
